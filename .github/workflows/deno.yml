@@ -27,11 +27,11 @@ jobs:
       - name: hi
         run: git clone https://github.com/bunnelldp-sketch/natural-selection
       - name: chipper
-        run: cd ../chipper && np install
+        run: cd natural-selection/chipper && np install
       - name: perennial-alias
-        run: cd ../perennial-alias && npm install
+        run: cd natural-selection/perennial-alias && npm install
       - name: natural-selection
-        run: cd ../natural-selection && npm install
+        run: cd natural-selection/natural-selection && npm install
       - name: start
-        run: cd .. && grunt dev-server
+        run: cd natural-selection && grunt dev-server
 
