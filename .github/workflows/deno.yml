@@ -26,6 +26,8 @@ jobs:
         uses: actions/checkout@v4
       - name: hi
         run: git clone https://github.com/bunnelldp-sketch/natural-selection
+      - name: why
+        run: ls
       - name: chipper
         run: cd natural-selection/chipper && npm install
       - name: perennial-alias
