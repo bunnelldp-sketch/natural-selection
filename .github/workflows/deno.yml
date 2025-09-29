@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Setup repo
         uses: actions/checkout@v4
+      - name: hi
+        run: git clone https://github.com/bunnelldp-sketch/natural-selection
       - name: chipper
         run: cd ../chipper && np install
       - name: perennial-alias
