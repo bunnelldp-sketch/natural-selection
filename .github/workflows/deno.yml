@@ -25,11 +25,11 @@ jobs:
       - name: Setup repo
         uses: actions/checkout@v4
       - name: chipper
-        run: cd chipper && np install
+        run: cd ../chipper && np install
       - name: perennial-alias
-        run: cd perennial-alias && npm install
+        run: cd ../perennial-alias && npm install
       - name: natural-selection
-        run: cd natural-selection && npm install
+        run: cd ../natural-selection && npm install
       - name: start
-        run: grunt dev-server
+        run: cd .. && grunt dev-server
 
