@@ -34,10 +34,8 @@ jobs:
         run: cd perennial-alias && npm install
       - name: natural-selection
         run: cd natural-selection && npm install
-      - name: hello
-        run: npm uninstall grunt
       - name: thefirsthello
-        run: npm install -g grunt-cli
+        run: npm install -g grunt-cli --force
       - name: start
         run: grunt --brands=adapted-from-phet
       - name: hello
