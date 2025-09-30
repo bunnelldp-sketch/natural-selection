@@ -4,7 +4,7 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/phetsims/natural-selection.git"
+    "url": "https://github.com/bunnelldp-sketch/natural-selection.git"
   },
   "devDependencies": {
     "grunt": "~1.5.3"
