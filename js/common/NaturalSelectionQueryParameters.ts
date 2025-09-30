@@ -163,7 +163,7 @@ const NaturalSelectionQueryParameters = QueryStringMachine.getAll( {
   // Tuned in https://github.com/phetsims/natural-selection/issues/75
   maxPopulation: {
     type: 'number',
-    defaultValue: 750,
+    defaultValue: 75000,
     isValidValue: ( value: number ) => NaturalSelectionUtils.isPositiveInteger( value )
   },
 
