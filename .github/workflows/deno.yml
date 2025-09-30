@@ -29,11 +29,11 @@ jobs:
       - name: why
         run: ls
       - name: chipper
-        run: cd natural-selection/chipper && npm install
+        run: cd chipper && npm install
       - name: perennial-alias
-        run: cd natural-selection/perennial-alias && npm install
+        run: cd perennial-alias && npm install
       - name: natural-selection
-        run: cd natural-selection/natural-selection && npm install
+        run: cd natural-selection && npm install
       - name: start
         run: cd natural-selection && grunt dev-server
 
