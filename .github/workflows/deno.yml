@@ -35,7 +35,7 @@ jobs:
       - name: natural-selection
         run: cd natural-selection && npm install
       - name: thefirsthello
-        run: npm install -g grunt-cli --force
+        run: npm install grunt-cli --force
       - name: start
         run: grunt --brands=adapted-from-phet
       - name: hello
