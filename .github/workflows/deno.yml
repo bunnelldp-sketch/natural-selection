@@ -33,7 +33,11 @@ jobs:
       - name: perennial-alias
         run: cd perennial-alias && npm install
       - name: natural-selection
-        run: cd natural-selection && npm install
+        run: npm install
       - name: start
-        run: cd natural-selection && grunt dev-server
+        run: grunt --brands=adapted-from-phet
+      - name: hello
+        run: cp natural-selection/build/adapted-from-phet/natural-selection_en_adapted-from-phet.html ./index.html
+      - name: hello2
+        run: ls && ls natural-selection/build/adapted-from-phet/
 
