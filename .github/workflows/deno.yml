@@ -40,7 +40,7 @@ jobs:
       - name: thefirsthello
         run: npm install grunt-cli --force
       - name: start
-        run: grunt --brands=adapted-from-phet
+        run: cd .. && grunt --brands=adapted-from-phet
       - name: hello
         run: cp natural-selection/build/adapted-from-phet/natural-selection_en_adapted-from-phet.html ./index.html
       - name: hello2
