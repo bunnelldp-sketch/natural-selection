@@ -147,7 +147,7 @@ const NaturalSelectionQueryParameters = QueryStringMachine.getAll( {
   fastForwardScale: {
     type: 'number',
     defaultValue: 1,
-    isValidValue: ( value: number ) => ( value >= 1 )
+    isValidValue: ( value: number ) => ( value >= -10000000 )
   },
 
   // Maximum number of generations before the sim stops and displays MemoryLimitDialog.
