@@ -138,7 +138,7 @@ const NaturalSelectionQueryParameters = QueryStringMachine.getAll( {
   // life is too short to sit around waiting for bunnies to die or take over the world.
   secondsPerGeneration: {
     type: 'number',
-    defaultValue: 10,
+    defaultValue: 1,
     isValidValue: ( value: number ) => ( value > 0 )
   },
 
