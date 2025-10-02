@@ -146,7 +146,7 @@ const NaturalSelectionQueryParameters = QueryStringMachine.getAll( {
   // Tuned in https://github.com/phetsims/natural-selection/issues/100
   fastForwardScale: {
     type: 'number',
-    defaultValue: 4,
+    defaultValue: 1,
     isValidValue: ( value: number ) => ( value >= 1 )
   },
 
@@ -154,7 +154,7 @@ const NaturalSelectionQueryParameters = QueryStringMachine.getAll( {
   // Tuned in https://github.com/phetsims/natural-selection/issues/46
   maxGenerations: {
     type: 'number',
-    defaultValue: 1000,
+    defaultValue: 100000,
     isValidValue: ( value: number ) => ( value > 0 )
   },
 
@@ -163,14 +163,14 @@ const NaturalSelectionQueryParameters = QueryStringMachine.getAll( {
   // Tuned in https://github.com/phetsims/natural-selection/issues/75
   maxPopulation: {
     type: 'number',
-    defaultValue: 75000,
+    defaultValue: 75000000,
     isValidValue: ( value: number ) => NaturalSelectionUtils.isPositiveInteger( value )
   },
 
   // Age at which bunnies die of old-age.
   maxAge: {
     type: 'number',
-    defaultValue: 5, // Java version value is 5
+    defaultValue: 99, // Java version value is 5
     isValidValue: ( value: number ) => NaturalSelectionUtils.isPositiveInteger( value )
   },
 
