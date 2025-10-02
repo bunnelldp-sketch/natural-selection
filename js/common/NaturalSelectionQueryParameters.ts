@@ -146,8 +146,8 @@ const NaturalSelectionQueryParameters = QueryStringMachine.getAll( {
   // Tuned in https://github.com/phetsims/natural-selection/issues/100
   fastForwardScale: {
     type: 'number',
-    defaultValue: 1,
-    isValidValue: ( value: number ) => ( value >= -10000000 )
+    defaultValue: 10,
+    isValidValue: ( value: number ) => ( value >= 1 )
   },
 
   // Maximum number of generations before the sim stops and displays MemoryLimitDialog.
