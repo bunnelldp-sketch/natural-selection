@@ -30,10 +30,11 @@ import Genotype, { GenotypeOptions } from './Genotype.js';
 import Organism, { OrganismOptions } from './Organism.js';
 import Phenotype from './Phenotype.js';
 import XDirection from './XDirection.js';
-
-const HOP_TIME_RANGE = new Range( 0.25, 0.5 ); // time to complete a hop cycle, in seconds
-const HOP_DISTANCE_RANGE = new Range( 15, 20 ); // straight-line distance that a bunny hops in the xz plane
-const HOP_HEIGHT_RANGE = new Range( 30, 50 ); // how high above the ground a bunny hops
+const hello=0.25
+const hi=15
+const HOP_TIME_RANGE = new Range( hello, hello*2 ); // time to complete a hop cycle, in seconds
+const HOP_DISTANCE_RANGE = new Range( hi, hi+5 ); // straight-line distance that a bunny hops in the xz plane
+const HOP_HEIGHT_RANGE = new Range( hi*2, hi*3+5 ); // how high above the ground a bunny hops
 const X_MARGIN = 28; // determined empirically, to keep bunnies inside bounds of the environment
 
 type SelfOptions = {
